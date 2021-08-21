@@ -1,0 +1,27 @@
+<ion-header>
+  <ion-toolbar color="warning">
+    <ion-title>Login</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <app-logo></app-logo>
+  <h2>Sign In</h2>
+<ion-form>
+  <ion-item>
+    <ion-label position="stacked">Username</ion-label>    
+    <ion-input type="text"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="stacked">Password</ion-label>    
+    <ion-input type="password"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <a routerLink="/signup">Sign In</a>
+  </ion-item>
+
+  <ion-button expand="block" shape="round" color="dark" (click)='login()' >Sign In</ion-button>
+</ion-form>
+</ion-content>
